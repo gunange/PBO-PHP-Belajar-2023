@@ -1,6 +1,9 @@
 <?php
 
-include_once "apps/Database.php";
+include_once "model/Mahasiswa.php";
 
-$db = new Database;
+$mhs = new Mahasiswa;
+
+$mhs->showAll();
+
 
