@@ -16,6 +16,11 @@ class Mahasiswa {
         return $sql->fetchAll(PDO::FETCH_ASSOC);
     }
 
+
+    public function showText($text=""){
+        echo "- $text <br>";
+    }
+
     public function showAll(){
         foreach($this->getAll() as $d){
             echo "Nama : " . $d['nama'] .  "<br>";
