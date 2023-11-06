@@ -5,9 +5,10 @@ class Mobil  {
         $warna ,
         $merek ,
         $harga,
-        $ban,
-        $spidometer = 0
+        $ban
     ;
+
+    private $spidometer = 0;
 
     public function __construct($merek_mobil){
         $this->merek = $merek_mobil ;

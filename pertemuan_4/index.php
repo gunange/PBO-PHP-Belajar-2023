@@ -10,14 +10,27 @@ $suzuki = new Mobil("Suzuki");
 $daihatsu = new Mobil("Daihatsu");
 
 $toyota->tambahGas(10);
-$toyota->tambahGas(30);
-$toyota->tambahGas(60);
 $toyota->kecepatan();
 echo "<br><hr>";
 
-
+$suzuki->tambahGas(10);
+$suzuki->tambahGas(20);
+$suzuki->tambahGas(30);
 $suzuki->kecepatan();
 
 
 echo "<br><hr>";
+$daihatsu->tambahGas(70);
 $daihatsu->kecepatan();
+
+
+echo "<br><hr>";
+
+$gas = 10;
+
+$hasilGas = $gas;
+
+$hasilGas += 20;
+$hasilGas += 20;
+
+echo "Nilai GAS  : " . $hasilGas;
