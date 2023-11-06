@@ -15,6 +15,15 @@ class Robot {
         $this->kecepatan = $this->kecepatan * 2 ;
     }
 
+    public function tambah($nilai_a, $nilai_b){
+        $this->showText("Nilai A : $nilai_a");
+        $this->showText("Nilai B : $nilai_b");
+
+        $hasil = $nilai_a + $nilai_b;
+
+        $this->showText("Hasil : $hasil");
+    }
+
     public function hitungLuas($panjang, $lebar){
         $this->showText("Nilai Pajang : $panjang");
         $this->showText("Nilai Lebar : $lebar");

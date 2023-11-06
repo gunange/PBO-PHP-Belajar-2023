@@ -7,4 +7,4 @@ include_once "model/Robot.php";
 
 $transformer = new Robot("Transformar"); 
 
-$transformer->hitungLuas(20 , 10);
+$transformer->tambah(5 , 10);
