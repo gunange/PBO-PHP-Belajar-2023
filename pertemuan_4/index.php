@@ -7,22 +7,4 @@ include_once "model/Robot.php";
 
 $transformer = new Robot("Transformar"); 
 
-
-$transformer->warna = "Kuning" ;
-
-$transformer->tampilBiodata();
-
-$transformer->tambahKecepatan(20);
-$transformer->tambahKecepatan(10);
-$transformer->tambahKecepatan(5);
-
-$transformer->kurangiKecepatan(30);
-$transformer->tambahKecepatan(50);
-
-
-
-
-
-$transformer->turboKecepatan();
-
-
+$transformer->hitungLuas(20 , 10);
