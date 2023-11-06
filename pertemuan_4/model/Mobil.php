@@ -15,7 +15,7 @@ class Mobil  {
     }
 
     public function tambahGas($gas){
-        $this->spidometer = $gas;
+        $this->spidometer += $gas;
     }
     public function kurangiGas(){}
     public function kecepatan(){

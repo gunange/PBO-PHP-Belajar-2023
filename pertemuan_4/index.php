@@ -15,22 +15,11 @@ echo "<br><hr>";
 
 $suzuki->tambahGas(10);
 $suzuki->tambahGas(20);
-$suzuki->tambahGas(30);
 $suzuki->kecepatan();
 
 
 echo "<br><hr>";
-$daihatsu->tambahGas(70);
+$daihatsu->tambahGas(20);
+$daihatsu->tambahGas(5);
 $daihatsu->kecepatan();
 
-
-echo "<br><hr>";
-
-$gas = 10;
-
-$hasilGas = $gas;
-
-$hasilGas += 20;
-$hasilGas += 20;
-
-echo "Nilai GAS  : " . $hasilGas;
