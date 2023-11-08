@@ -1,12 +1,18 @@
 <?php
 
+require 'model/Mahasiswa.php';
 
-echo "
-BUAT Sebuah CLass Dengan Nama Calculator
-class tersebut disimpan ke dalam folder model
+$mhs = new Mahasiswa();
 
-property tidak ada 
-method : tambah, kurang, kali, bagi, hitung rumus luas_segitiga
+$data_mhs = $mhs->getAll();
 
 
-";
+print_r($data_mhs[0]);
+foreach ($data_mhs as $kunci => $value){
+    
+    echo "Nama " . $value["nama"];
+
+    echo "<br>";
+    echo "HOBI : " . $value["hobi"];
+    echo "<br><hr>";
+}
