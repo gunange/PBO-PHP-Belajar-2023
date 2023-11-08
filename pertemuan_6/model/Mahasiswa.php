@@ -22,7 +22,7 @@ class Mahasiswa {
     }
 
     public function showAll(){
-        foreach($this->getAll() as $d){
+        foreach($this->getAll() as $d){ 
             echo "Nama : " . $d['nama'] .  "<br>";
             echo "NIM : " . $d['nim'] .  "<br>";
             echo "<br><br>";

@@ -4,15 +4,34 @@ require 'model/Mahasiswa.php';
 
 $mhs = new Mahasiswa();
 
-$data_mhs = $mhs->getAll();
+?>
 
+<!DOCTYPE html>
+<html lang="en">
 
-print_r($data_mhs[0]);
-foreach ($data_mhs as $kunci => $value){
-    
-    echo "Nama " . $value["nama"];
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" type="text/css" href="assets/css/index.css"  />
 
-    echo "<br>";
-    echo "HOBI : " . $value["hobi"];
-    echo "<br><hr>";
-}
+<body>
+    <table id="customers">
+        <tr>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Hobi</th>
+        </tr>
+        <?php foreach ($mhs->getAll() as $k => $v) : ?>
+        <tr>
+            <td><?= $v['nama'] ?></td>
+            <td><?= $v['nim'] ?></td>
+            <td><?= $v['hobi'] ?></td>
+        </tr>
+        <?php endforeach; ?>
+        
+    </table>
+</body>
+
+</html>
